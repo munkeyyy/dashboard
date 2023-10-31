@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <div class="main">
+      <!-- nav-bar -->
+      <div class="nav">
+        <div class="left">
+          <div class="logo">
+            <a href="#" id="logo">
+              <div class="logo-cont">
+                <img src="images/logo-inverse.png" alt="" />
+              </div>
+            </a>
+
+            <i class="ri-menu-line" onclick="condense(this)"></i>
+          </div>
+          <ul>
+            <li class="search-box">
+              <div class="search">
+                <input type="text" id="input" placeholder="search" />
+                <div class="search-icon" id="search-btn">
+                  <i class="ri-search-line"></i>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown">
+              <div class="dropdown-main">
+                <i class="ri-gift-line"></i>
+                Mega Menu
+                <i class="ri-arrow-drop-down-line"></i>
+              </div>
+            </li>
+            <li class="dropdown">
+              <div class="dropdown-main">
+                <span>4</span>
+                settings
+                <i class="ri-arrow-drop-down-line"></i>
+              </div>
+            </li>
+            <li class="dropdown">
+              <div class="dropdown-main">
+                <i class="ri-settings-5-line"></i>
+                settings
+                <i class="ri-arrow-drop-down-line"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <ul>
+            <li class="right-options">
+              <span class="icon1"><i class="ri-grid-fill"></i></span>
+            </li>
+            <li class="right-options">
+              <div class="icon2">
+                <div class="icon-main">
+                  <i class="ri-notification-4-fill"></i>
+                </div>
+              </div>
+            </li>
+            <li class="right-options">
+              <span class="icon3"><i class="ri-grid-fill"></i></span>
+            </li>
+            <li class="right-options">
+              <span class="icon4"><i class="ri-pie-chart-2-fill"></i></span>
+            </li>
+          </ul>
+          <div class="account-details">
+            <div class="pfp">
+              <div class="img-cont">
+                <img src="images/avatar1.jpg" alt="profile" />
+              </div>
+              <i class="ri-arrow-drop-down-line"></i>
+            </div>
+            <div class="name">
+              <h2>Alina Mclourd</h2>
+              <span>VP People Manager</span>
+            </div>
+            <div class="box-icon">
+              <i class="ri-gift-fill"></i>
+            </div>
+          </div>
+          <i class="ri-menu-line ham"></i>
+        </div>
+      </div>
+    </div>
+    <div class="dashboard">
+      <!-- sidebar -->
+      <div class="sidebar" id="sidebar">
+        <div class="menu">
+          <h1 class="menu-title">Menu</h1>
+          <div class="dashboards">
+            <div class="dashboards-title" id="title1" onclick="expand(1)">
+              <div class="dash-t-left">
+                <i class="ri-rocket-line dash-icon"></i>
+                <p>Dashboard</p>
+              </div>
+              <i class="ri-arrow-drop-down-line down"></i>
+            </div>
+            <div class="dashboards-body" id="body1">
+              <ul>
+                <li>Analytics</li>
+                <li>Commerce</li>
+                <li>Sales</li>
+                <li>Minimal</li>
+                <li>CRM</li>
+              </ul>
+            </div>
+          </div>
+          <div class="dashboards">
+            <div class="dashboards-title" id="title2" onclick="expand(2)">
+              <div class="dash-t-left">
+                <i class="ri-pages-line dash-icon"></i>
+                <p>Pages</p>
+              </div>
+              <i class="ri-arrow-drop-down-line down"></i>
+            </div>
+            <div class="dashboards-body" id="body2">
+              <ul>
+                <li>Analytics</li>
+                <li>Commerce</li>
+                <li>Sales</li>
+                <li>Minimal</li>
+                <li>CRM</li>
+              </ul>
+            </div>
+          </div>
+          <div class="dashboards">
+            <div class="dashboards-title" id="title3" onclick="expand(3)">
+              <div class="dash-t-left">
+                <i class="ri-terminal-window-line dash-icon"></i>
+                <p>Applications</p>
+              </div>
+              <i class="ri-arrow-drop-down-line down"></i>
+            </div>
+            <div class="dashboards-body" id="body3">
+              <ul>
+                <li>Analytics</li>
+                <li>Commerce</li>
+                <li>Sales</li>
+                <li>Minimal</li>
+                <li>CRM</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <h1 class="menu-title">ui components</h1>
+          <div class="dashboards">
+            <div class="dashboards-title" id="title4" onclick="expand(4)">
+              <div class="dash-t-left">
+                <i class="ri-rocket-line dash-icon"></i>
+                <p>Dashboard</p>
+              </div>
+              <i class="ri-arrow-drop-down-line down"></i>
+            </div>
+            <div class="dashboards-body" id="body4">
+              <ul>
+                <li>Analytics</li>
+                <li>Commerce</li>
+                <li>Sales</li>
+                <li>Minimal</li>
+                <li>CRM</li>
+              </ul>
+            </div>
+          </div>
+          <div class="dashboards">
+            <div class="dashboards-title" id="title5" onclick="expand(5)">
+              <div class="dash-t-left">
+                <i class="ri-pages-line dash-icon"></i>
+                <p>Pages</p>
+              </div>
+              <i class="ri-arrow-drop-down-line down"></i>
+            </div>
+            <div class="dashboards-body" id="body5">
+              <ul>
+                <li>Analytics</li>
+                <li>Commerce</li>
+                <li>Sales</li>
+                <li>Minimal</li>
+                <li>CRM</li>
+              </ul>
+            </div>
+          </div>
+          <div class="dashboards">
+            <div class="dashboards-title" id="title6" onclick="expand(6)">
+              <div class="dash-t-left">
+                <i class="ri-terminal-window-line dash-icon"></i>
+                <p>Applications</p>
+              </div>
+              <i class="ri-arrow-drop-down-line down"></i>
+            </div>
+            <div class="dashboards-body" id="body6">
+              <ul>
+                <li>Analytics</li>
+                <li>Commerce</li>
+                <li>Sales</li>
+                <li>Minimal</li>
+                <li>CRM</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <h1 class="menu-title">Dashboard widgets</h1>
+          <div class="dashboards">
+            <div class="dashboards-title" id="title7" onclick="expand(7)">
+              <div class="dash-t-left">
+                <i class="ri-rocket-line dash-icon"></i>
+                <p>Dashboard</p>
+              </div>
+              <i class="ri-arrow-drop-down-line down"></i>
+            </div>
+            <div class="dashboards-body" id="body7">
+              <ul>
+                <li>Analytics</li>
+                <li>Commerce</li>
+                <li>Sales</li>
+                <li>Minimal</li>
+                <li>CRM</li>
+              </ul>
+            </div>
+          </div>
+          <div class="dashboards">
+            <div class="dashboards-title" id="title8" onclick="expand(8)">
+              <div class="dash-t-left">
+                <i class="ri-pages-line dash-icon"></i>
+                <p>Pages</p>
+              </div>
+              <i class="ri-arrow-drop-down-line down"></i>
+            </div>
+            <div class="dashboards-body" id="body8">
+              <ul>
+                <li>Analytics</li>
+                <li>Commerce</li>
+                <li>Sales</li>
+                <li>Minimal</li>
+                <li>CRM</li>
+              </ul>
+            </div>
+          </div>
+          <div class="dashboards">
+            <div class="dashboards-title" id="title9" onclick="expand(9)">
+              <div class="dash-t-left">
+                <i class="ri-terminal-window-line dash-icon"></i>
+                <p>Applications</p>
+              </div>
+              <i class="ri-arrow-drop-down-line down"></i>
+            </div>
+            <div class="dashboards-body" id="body9">
+              <ul>
+                <li>Analytics</li>
+                <li>Commerce</li>
+                <li>Sales</li>
+                <li>Minimal</li>
+                <li>CRM</li>
+              </ul>
+            </div>
+          </div>
+          <div class="dashboards">
+            <div class="dashboards-title" id="title10" onclick="expand(10)">
+              <div class="dash-t-left">
+                <i class="ri-terminal-window-line dash-icon"></i>
+                <p>Profile boxes</p>
+              </div>
+              <i class="ri-arrow-drop-down-line down"></i>
+            </div>
+            <div class="dashboards-body" id="body10">
+              <ul>
+                <li>Analytics</li>
+                <li>Commerce</li>
+                <li>Sales</li>
+                <li>Minimal</li>
+                <li>CRM</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <h1 class="menu-title">Forms</h1>
+          <div class="dashboards">
+            <div class="dashboards-title" id="title11" onclick="expand(11)">
+              <div class="dash-t-left">
+                <i class="ri-rocket-line dash-icon"></i>
+                <p>Dashboard</p>
+              </div>
+              <i class="ri-arrow-drop-down-line down"></i>
+            </div>
+            <div class="dashboards-body" id="body11">
+              <ul>
+                <li>Analytics</li>
+                <li>Commerce</li>
+                <li>Sales</li>
+                <li>Minimal</li>
+                <li>CRM</li>
+              </ul>
+            </div>
+          </div>
+          <div class="dashboards">
+            <div class="dashboards-title" id="title12" onclick="expand(12)">
+              <div class="dash-t-left">
+                <i class="ri-pages-line dash-icon"></i>
+                <p>Pages</p>
+              </div>
+              <i class="ri-arrow-drop-down-line down"></i>
+            </div>
+            <div class="dashboards-body" id="body12">
+              <ul>
+                <li>Analytics</li>
+                <li>Commerce</li>
+                <li>Sales</li>
+                <li>Minimal</li>
+                <li>CRM</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <h1 class="menu-title">Charts</h1>
+          <div class="dashboards">
+            <div class="dashboards-title" id="title13" onclick="expand(13)">
+              <div class="dash-t-left">
+                <i class="ri-rocket-line dash-icon"></i>
+                <p>Dashboard</p>
+              </div>
+              <i class="ri-arrow-drop-down-line down"></i>
+            </div>
+            <div class="dashboards-body" id="body13">
+              <ul>
+                <li>Analytics</li>
+                <li>Commerce</li>
+                <li>Sales</li>
+                <li>Minimal</li>
+                <li>CRM</li>
+              </ul>
+            </div>
+          </div>
+          <div class="dashboards">
+            <div class="dashboards-title" id="title14" onclick="expand(14)">
+              <div class="dash-t-left">
+                <i class="ri-pages-line dash-icon"></i>
+                <p>Pages</p>
+              </div>
+              <i class="ri-arrow-drop-down-line down"></i>
+            </div>
+            <div class="dashboards-body" id="body14">
+              <ul>
+                <li>Analytics</li>
+                <li>Commerce</li>
+                <li>Sales</li>
+                <li>Minimal</li>
+                <li>CRM</li>
+              </ul>
+            </div>
+          </div>
+          <div class="dashboards">
+            <div class="dashboards-title" id="title15" onclick="expand(15)">
+              <div class="dash-t-left">
+                <i class="ri-pages-line dash-icon"></i>
+                <p>Pages</p>
+              </div>
+              <i class="ri-arrow-drop-down-line down"></i>
+            </div>
+            <div class="dashboards-body" id="body15">
+              <ul>
+                <li>Analytics</li>
+                <li>Commerce</li>
+                <li>Sales</li>
+                <li>Minimal</li>
+                <li>CRM</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-cont" id="dash-cont">
+        <div class="top">
+          <div class="top-left">
+            <div class="icon-box">
+              <i class="ri-roadster-line"></i>
+            </div>
+            <div class="top-info">
+              <h3 class="top-heading">Analytics Dashboard</h3>
+              <p class="top-desc">
+                This is an example dashboard created using build-in elements and
+                components.
+              </p>
+            </div>
+          </div>
+          <div class="top-right">
+            <div class="star-box">
+              <i class="ri-star-s-fill"></i>
+            </div>
+            <div class="buttons-div">
+              <i class="ri-briefcase-4-line bag"></i>
+              Buttons
+              <i class="ri-arrow-drop-down-fill"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
