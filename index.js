@@ -25,11 +25,11 @@ searchBtn.addEventListener("click", () => {
 // sidebar
 let sidebar = document.getElementById("sidebar");
 let menu_title = document.getElementsByClassName("menu-title");
-let dashboards = document.getElementsByClassName("dashboards")
+let dashboards = document.getElementsByClassName("dashboards");
 
 function condense(a) {
   let dash_cont = document.getElementById("dash-cont");
-  let dash_icon = document.getElementsByClassName("dash-icon")
+  let dash_icon = document.getElementsByClassName("dash-icon");
   let logo = document.getElementById("logo");
   a.style = "cursor:pointer";
   if (sidebar.style.width != "5%") {
@@ -41,11 +41,11 @@ function condense(a) {
       menu_title[i].style = "text-indent:999em";
       menu_title[i].classList.add("underline");
     }
-    for(let j=0;j<dashboards.length;j++){
-      dashboards[j].style.paddingLeft="0"
+    for (let j = 0; j < dashboards.length; j++) {
+      dashboards[j].style.paddingLeft = "0";
     }
-    for(let k=0; k<dash_icon.length;k++){
-      dash_icon[k].style.padding="10px"
+    for (let k = 0; k < dash_icon.length; k++) {
+      dash_icon[k].style.padding = "10px";
     }
   } else {
     sidebar.style.width = "18%";
@@ -54,11 +54,11 @@ function condense(a) {
       menu_title[i].style = "text-indent:0em";
       menu_title[i].classList.remove("underline");
     }
-    for(let j=0;j<dashboards.length;j++){
-      dashboards[j].style.paddingLeft="0.8vw"
+    for (let j = 0; j < dashboards.length; j++) {
+      dashboards[j].style.paddingLeft = "0.8vw";
     }
-    for(let k=0; k<dash_icon.length;k++){
-      dash_icon[k].style.padding="0px"
+    for (let k = 0; k < dash_icon.length; k++) {
+      dash_icon[k].style.padding = "0px";
     }
     dash_cont.style.marginLeft = "18vw";
     logo.style.display = "block";
@@ -93,4 +93,15 @@ function expand(y) {
     title.childNodes[1].childNodes[3].style = "font-weight:600";
     body.style.padding = "0.5em 0 0 2rem";
   }
+}
+
+// variation btn
+
+function active(a) {
+  let btn = document.getElementsByClassName("btm-btn1");
+
+  for (let i = 0; i < btn.length; i++) {
+    btn[i].className = "btm-btn2";
+  }
+  a.className = "btm-btn1";
 }
