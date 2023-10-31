@@ -97,11 +97,19 @@ function expand(y) {
 
 // variation btn
 
-function active(a) {
-  let btn = document.getElementsByClassName("btm-btn1");
+const btns = document.querySelectorAll(".btm-btn1");
 
-  for (let i = 0; i < btn.length; i++) {
-    btn[i].className = "btm-btn2";
-  }
-  a.className = "btm-btn1";
-}
+
+btns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+  
+    const currentActive = document.querySelector(".btm-btn2");
+    if (currentActive) {
+      currentActive.classList.remove("btm-btn2");
+    }
+    btn.classList.add("btm-btn2");
+  });
+});
+
+  
+
