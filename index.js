@@ -106,7 +106,7 @@ btns.forEach((btn) => {
     const currentActive = document.querySelector(".btm-btn2");
     if (currentActive) {
       currentActive.classList.remove("btm-btn2");
-    }
+    } 
     btn.classList.add("btm-btn2");
   });
 });

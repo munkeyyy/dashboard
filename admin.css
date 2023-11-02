@@ -12,6 +12,9 @@ body {
 li {
   list-style: none;
 }
+button{
+  cursor: pointer;
+}
 .nav {
   display: flex;
   align-items: center;
@@ -403,6 +406,7 @@ li {
   align-items: center;
   justify-content: start;
   gap: 2vw;
+  margin-bottom: 2.5vh;
 }
 .btm-btn1{
   padding: .5vw .7vw;
@@ -410,7 +414,7 @@ li {
   border: none;
   cursor: pointer;
   font-size: 1.08vw;
-  transition: all .6s;
+  /* transition: all .6s; */
 }
 .btm-btn1:hover, .btm-btn2{
   scale: 1;
@@ -421,7 +425,7 @@ li {
   border: none;
   border-radius: 5px;
   font-size: 1.08vw;
-  transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s ;
+  /* transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s ;.portfolio-perfom */
   box-shadow: 0 16px 26px -10px rgba(63,106,216,.56), 0 4px 25px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(63,106,216,.2);
 }
 .btm-btn1:active,.btm-btn2:active{
@@ -429,3 +433,30 @@ li {
 }
 
 
+.portfolio-perfom{
+  background:white;
+}
+.portfolio-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0.8vw 1vw;
+}
+.portfolio-cont{
+  padding:0.8vw 1vw;
+  border-bottom: 1px solid rgba(26,54,126,.125);
+  border-top: 1px solid rgba(26,54,126,.125);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.view-all{
+  background: transparent;
+  padding: 0.25rem 1rem;
+  border-radius: 0.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
